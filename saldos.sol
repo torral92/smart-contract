@@ -4,7 +4,7 @@ contract Banco {
 
     // Permite que esta función pueda ser pagable con payable. 
     constructor () payable public {
-        address payable wallet = payable(address(this));
+
    }
 
     // Como queremos meter dinero, necesitamos que sea payable. 
@@ -19,5 +19,7 @@ contract Banco {
                                                              // con esto el que llama a esta funcion, se le transfiera todo el balance del contrato. 
     }
 
-    
+
 }
+
+// Función que recibe primero Eth y luego da a traves del metodo transfer. 
