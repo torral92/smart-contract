@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 contract Contador {
@@ -6,7 +7,7 @@ contract Contador {
     
     // Inicializador de Deploy, esta función es ejecutada sólo una vez al inicio del deploy, inicializando el valor
     // de la variable count. 
-    constructor(uint256 _count) public {
+    constructor(uint256 _count) {
         count=_count; 
 
     }
