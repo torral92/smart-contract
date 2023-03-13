@@ -48,3 +48,5 @@ contract Banco {
 
 
 }
+
+// Este código es compilable y sin errores.
