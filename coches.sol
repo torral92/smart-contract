@@ -45,3 +45,5 @@ contract Coches {
     }
 
 }
+
+// Este código es compilable y sin errores.
