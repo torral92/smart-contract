@@ -36,3 +36,5 @@ contract Contador {
 
     }
 }
+
+// Este código es compilable y sin errores.
