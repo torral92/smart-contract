@@ -4,7 +4,7 @@ pragma solidity^0.8.0;
 contract Loteria {
     address internal owner; //
     uint256 internal num; //
-    uint256 public numGanador; //
+    uint256 public numGanador; //Al hacer public una variable de estado genera un getter automáticamente en el compilador.
     uint256 public precio; //
     bool public juego; //
     address public ganador; //
@@ -55,7 +55,7 @@ contract Loteria {
     }
 
     function verPremio() public view returns(uint256) {
-        return address(this).balance - (num * (precio/2));
+        return address(this).balance/2; 
     }
 
     function retirarFondosContrato() external returns(uint256) {
@@ -67,4 +67,4 @@ contract Loteria {
     }
 }
 
-// Este contrato es complilable si errores.
+// Este contrato es complilable sin errores. 
