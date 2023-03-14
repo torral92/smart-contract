@@ -4,7 +4,7 @@
 
 pragma solidity^0.8.0;
 
-contract MyCoin {
+contract NewToken {
     string public name;
     string public symbol;
     uint8 public decimals;
