@@ -10,7 +10,7 @@ contract MultipleWhihdraw {
         require(msg.sender == owner,"Solo el owner esta autorizado");
         _;
     }
-    constructo () {
+    constructor () {
       owner=msg.sender;
     }
     // 1 Parametro (addresses):Payable para poder manejar saldos y decir que es un array. Al ser un array debemos ponerlo en memoria.
